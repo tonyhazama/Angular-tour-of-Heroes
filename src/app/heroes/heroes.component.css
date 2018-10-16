@@ -1,0 +1,19 @@
+.hero{
+    line-height: 14px;
+    padding: 8px 10px;
+    height: 30px;
+    cursor: pointer;
+    background: #eeeeee;
+    margin-bottom: 10px;
+    border-radius: 2.5px;
+    color: #111111;
+}
+
+.hero:hover{
+    background: #dddddd;
+}
+
+.hero.selected{
+    background: #cbedf3;
+}
+

@@ -1,0 +1,12 @@
+<div *ngIf="hero">
+    <h3>{{hero.name}} Details (id.00{{hero.id}})</h3>
+    <div><input class="form spaced-v" type="text" [(ngModel)]="hero.name"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea deserunt ipsum eveniet fugiat quisquam aliquam provident alias sit at voluptas nihil, 
+        laudantium omnis cupiditate reprehenderit necessitatibus. 
+        Itaque omnis inventore voluptates.
+    </p>
+    <button class="btn spaced" (click)="save()">SAVE</button>
+    <button class="btn spaced" (click)="goBack()">BACK</button>
+</div>
