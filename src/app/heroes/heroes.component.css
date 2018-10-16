@@ -2,7 +2,7 @@
     line-height: 14px;
     padding: 8px 10px;
     height: 30px;
-    cursor: pointer;
+    cursor: default;
     background: #eeeeee;
     margin-bottom: 10px;
     border-radius: 2.5px;
@@ -17,3 +17,26 @@
     background: #cbedf3;
 }
 
+.icon{
+    height: 14px;
+    width: 14px;
+    background: transparent;
+    float: right; 
+    line-height: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.icon.class{ border-radius: 7px; }
+
+.icon.close{ 
+    font-family: 'consolas'; 
+    color: #aaaaaa; 
+    margin-left: 5px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon.str{ background: tomato;  }
+.icon.agi{ background: springgreen; }
+.icon.int{ background: skyblue; }

@@ -5,15 +5,19 @@
 
 <h2>My Heroes</h2>
 <br>
+
+<div>
+	<input class="form" type="text" #heroName placeholder="Hero Name">
+	<button class="btn" (click)="add(heroName.value); heroName.value = '';">Add Hero</button>
+</div>
+<br><br>
+
 <ul class="heroes">
 	<li class="hero" *ngFor="let hero of heroes">
 		<a routerLink="/detail/{{hero.id}}">
-			<span style="color: {{hero.color}};" class="badge">{{hero.id}} - </span> {{hero.name}}
+			<span class="badge">{{hero.id}} - </span> {{hero.name}}
 		</a>
+			<div class="icon close" (click)="delete(hero)">x</div>
+			<div class="icon class {{hero.class}}"></div>
 	</li>
 </ul>
-<br>
-<div>
-	<input class="form" type="text" #heroName placeholder="Hero Name">
-	<button class="btn">Add Hero</button>
-</div>
